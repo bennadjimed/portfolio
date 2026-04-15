@@ -1,4 +1,3 @@
-// Charger le thème sauvegardé
 window.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme");
 
@@ -8,7 +7,6 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Toggle thème
 function toggleTheme() {
     document.body.classList.toggle("light");
 
@@ -24,10 +22,7 @@ function toggleTheme() {
 }
 
 
-/* =========================
-   SMOOTH SCROLL NAV LINKS
-========================= */
-
+/* SMOOTH SCROLL NAV LINKS */
 document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -42,10 +37,7 @@ document.querySelectorAll("nav a").forEach(link => {
 });
 
 
-/* =========================
-   ACTIVE LINK ON SCROLL
-========================= */
-
+/*ACTIVE LINK ON SCROL*/
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
