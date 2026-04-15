@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Mohamed</h2>
+
+        <button onclick="toggleTheme()" id="themeBtn">
+            <i class="fas fa-moon"></i> </button>
+    <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+    <div class="hero-text">
+        <h1>Salut, je suis Mohamed</h1>
+        <p>Développeur Web & IA</p>
+
+    </div>
+
+    <img src="picture.jpg" class="profile" alt="photo">
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>À propos</h2>
+    <p>
+        Je suis passionné par le développement web et l’intelligence artificielle.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Mes projets</h2>
+    <p>Bientôt disponible...</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <!-- <p>
+    <i class="fas fa-envelope"></i>
+    Email :
+    <a href="mailto:mohamed98@gmail.com">
+        mohamed98@gmail.com
+    </a>
+    </p> -->
+    <div class="socials">
+        <a href="mailto:bennadji.mohamed98@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/mohamed-bennadji-a40b79366/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/bennadjimed"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com/Mohaben8.dz"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tumblr.com/nadji3008"><i class="fab fa-tumblr"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Mohamed</p>
+</footer>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("light");
+
+    let btn = document.getElementById("themeBtn");
+
+    if (document.body.classList.contains("light")) {
+        btn.textContent = "☀️";
+    } else {
+        btn.textContent = "🌙";
+    }
+}
+</script>
+<script>
+document.onkeydown = function(e) {
+    if (
+        e.keyCode == 123 || // F12
+        (e.ctrlKey && e.keyCode == 85) || // Ctrl+U
+        (e.ctrlKey && e.shiftKey && e.keyCode == 73) // Ctrl+Shift+I
+    ) {
+        return false;
+    }
+};
+</script>
+<script>
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+</script>
+</body>
+</html>
