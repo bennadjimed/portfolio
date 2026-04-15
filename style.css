@@ -84,7 +84,7 @@ section {
 }
 
 /* SOCIALS */
-.socials a {
+.socials a { 
     font-size: 25px;
     margin: 10px;
     color: var(--text);
