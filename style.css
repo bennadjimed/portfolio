@@ -73,10 +73,21 @@ nav a {
 .profile {
     width: 350px;
     height: 320px;
-    border-radius: 4%;
+    border-radius: 6%;
     object-fit: cover;
 }
+.profile {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 1s forwards;
+}
 
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /* SECTIONS */
 section {
     padding: 60px 20px;
